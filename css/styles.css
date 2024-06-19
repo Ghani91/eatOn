@@ -64,6 +64,7 @@ h3 {
     sans-serif;
   text-transform: uppercase;
   margin: 1rem 2rem;
+  white-space: nowrap;
 }
 
 .btn--primary {
@@ -96,4 +97,35 @@ h3 {
 }
 .btn--secondary:hover {
   background: #f3887e;
+}
+
+/* inout group */
+
+.email {
+  border-bottom-left-radius: 3rem;
+  border-top-left-radius: 3rem;
+  color: #d1c4b8;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  outline: none;
+  padding: 1rem 3rem;
+  white-space: nowrap;
+}
+
+.input-group {
+  display: flex;
+  box-shadow: 0 0 30px 20px lightgray;
+  border-collapse: collapse;
+  border-radius: 3rem;
+}
+
+.input-group .email {
+  flex-grow: 1;
+  border: 0;
+  padding-right: 0;
+}
+
+.input-group .btn {
+  margin: 0;
 }
