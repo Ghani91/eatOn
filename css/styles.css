@@ -159,3 +159,41 @@ h3 {
   text-align: center;
   white-space: nowrap;
 }
+
+/* score card */
+
+.container {
+  background: var(--color--secondary);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.score-card {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  font-family: "Archivo", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  max-width: 300px;
+  height: 30vw;
+  max-height: 300px;
+  margin: 1rem 0;
+}
+.score-card__heading {
+  font-size: 10vw;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.score-card__text {
+  font-size: 2vw;
+  font-weight: bold;
+  margin: 0;
+}
