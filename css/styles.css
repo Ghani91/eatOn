@@ -79,6 +79,12 @@ h3 {
 .btn--block {
   width: 100%;
 }
+.btn--rounded-right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 1rem 2rem;
+  font-weight: normal;
+}
 
 /* hover effect */
 .btn:hover {
