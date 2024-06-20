@@ -137,7 +137,7 @@ h3 {
 .media {
   align-items: center;
   border-radius: 5px;
-  border: 1px solid var(--color--secondary);
+  /* border: 1px solid var(--color--secondary); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,6 +148,7 @@ h3 {
   border-radius: 50%;
   height: 225px;
   width: 225px;
+  margin-bottom: 2rem;
 }
 
 .media__founder {
@@ -289,4 +290,38 @@ h3 {
 }
 .hero-block .container {
   margin: auto 0;
+}
+
+/* chef section */
+.block-chef {
+  background-color: var(--color--primary);
+  color: var(--color--secondary);
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  line-height: 1.1;
+  align-content: center;
+}
+.block-chef__contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-chef__heading {
+  font-size: 6.3rem;
+  margin-bottom: 2rem;
+}
+.block-chef__chef-description {
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .block-chef__contents {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .block-chef {
+    height: 100%;
+  }
 }
