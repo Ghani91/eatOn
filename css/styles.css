@@ -374,3 +374,14 @@ h3 {
     text-align: center;
   }
 }
+
+/* big burger */
+.block-bigburger {
+  background-color: var(--color--primary);
+  color: var(--color--secondary);
+}
+
+.block-bigburger .block-bestBurger__content {
+  order: -1;
+  margin-bottom: 4rem;
+}
