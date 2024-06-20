@@ -254,6 +254,15 @@ h3 {
   color: #fff;
 }
 
+.grid {
+  display: grid;
+  gap: 1rem 6rem;
+}
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 /* nav bar */
 
 .navbar {
@@ -323,5 +332,45 @@ h3 {
   }
   .block-chef {
     height: 100%;
+  }
+}
+
+/* best burger section */
+.block-bestBurger {
+  padding: 2rem 2rem;
+  background-color: var(--color--secondary);
+  align-content: center;
+  height: 100vh;
+  color: #fff;
+}
+.block-bestBurger__image {
+  width: 100%;
+  max-width: 450px;
+  /* height: 100%; */
+  border-radius: 50%;
+  align-self: center;
+  justify-self: center;
+}
+.block-bestBurger__content {
+  align-self: center;
+  justify-self: center;
+  text-align: left;
+}
+.block-bestBurger__heading {
+  font-size: 7.5rem;
+  font-weight: 700;
+  font-family: "Archivo", Arial, Helvetica, sans-serif;
+}
+.block-bestBurger__description {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .block-bestBurger {
+    height: 100%;
+  }
+  .block-bestBurger__content {
+    text-align: center;
   }
 }
