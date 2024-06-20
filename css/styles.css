@@ -234,13 +234,14 @@ h3 {
 /* lists */
 
 .list {
-  background: var(--color--secondary);
   color: #fff;
   /* display: flex;
   flex-direction: column; */
   list-style: none;
   margin: 0;
   padding: 0;
+  height: auto;
+  vertical-align: middle;
 }
 .list__item {
   text-align: center;
@@ -248,8 +249,21 @@ h3 {
 
 .list--inline .list__item {
   display: inline-block;
-  margin: 0 2rem;
+  margin: 0 1rem;
 }
 .list__item a {
   color: #fff;
+}
+
+/* nav bar */
+
+.navbar {
+  align-items: center;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__brand-logo {
+  height: 100px;
+  width: 100px;
 }
