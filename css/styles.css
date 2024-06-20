@@ -23,7 +23,7 @@ body {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   font-size: 2.4rem;
-  margin: 2rem;
+  /* margin: 2rem; */
   line-height: 1.5;
 }
 h1,
@@ -166,10 +166,8 @@ h3 {
 /* score card */
 
 .container {
-  background: var(--color--secondary);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  max-width: 1068px;
+  margin: 0 auto;
 }
 .score-card {
   border: 5px solid #fff;
@@ -266,4 +264,29 @@ h3 {
 .navbar__brand-logo {
   height: 100px;
   width: 100px;
+}
+
+/* hero section */
+
+.hero-block {
+  background-image: url("../assets/images/hero.png");
+  color: #fff;
+  background-size: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+.hero-block__heading {
+}
+.hero-block__content {
+  max-width: 700px;
+  margin-left: 7rem;
+}
+
+.hero-block-description {
+  font-size: 3.2rem;
+}
+.hero-block .container {
+  margin: auto 0;
 }
