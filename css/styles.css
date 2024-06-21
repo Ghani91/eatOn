@@ -168,7 +168,8 @@ h3 {
 
 .container {
   max-width: 1068px;
-  margin: 0 auto;
+  margin: auto;
+  align-self: center;
 }
 .score-card {
   border: 5px solid #fff;
@@ -384,4 +385,36 @@ h3 {
 .block-bigburger .block-bestBurger__content {
   order: -1;
   margin-bottom: 4rem;
+}
+
+/* block-statistics */
+.block-statistics {
+  background-color: var(--color--secondary);
+  height: 100vh;
+  align-content: center;
+}
+.block-statistics__content {
+  display: flex;
+  justify-content: space-around;
+}
+.block-statistics__header {
+  text-align: center;
+  color: #fff;
+}
+
+.block-statistics__heading {
+  font-size: 6.2rem;
+  font-weight: 700;
+  font-family: "Archivo", Arial, Helvetica, sans-serif;
+}
+.block-statistics__description {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .block-statistics__content {
+    flex-direction: column;
+    align-items: center;
+  }
 }
